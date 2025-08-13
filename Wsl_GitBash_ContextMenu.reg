@@ -1,0 +1,32 @@
+Windows Registry Editor Version 5.00
+
+; ===== WSL =====
+[HKEY_CLASSES_ROOT\Directory\shell\OpenWSL]
+@="Open WSL Here"
+"Icon"="C:\\Windows\\System32\\wsl.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenWSL\command]
+@="C:\\Windows\\System32\\wsl.exe --cd \"%V\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWSL]
+@="Open WSL Here"
+"Icon"="C:\\Windows\\System32\\wsl.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWSL\command]
+@="C:\\Windows\\System32\\wsl.exe --cd \"%V\""
+
+
+; ===== Git Bash =====
+[HKEY_CLASSES_ROOT\Directory\shell\OpenGitBash]
+@="Open Git Bash Here"
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenGitBash\command]
+@="C:\\Program Files\\Git\\git-bash.exe --cd=\"%V\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenGitBash]
+@="Open Git Bash Here"
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenGitBash\command]
+@="C:\\Program Files\\Git\\git-bash.exe --cd=\"%V\""
